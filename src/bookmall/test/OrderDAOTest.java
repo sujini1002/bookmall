@@ -12,9 +12,8 @@ import bookmall.vo.OrderVO;
 public class OrderDAOTest {
 
 	public static void main(String[] args) {
-		long no = insertOrder(5, 40000, "서울시 동대문구 청량리동");
-		getOrderList(5);
-		getOrderBookList(no);
+		getOrderList(1L);
+		getOrderBookList(1L);
 	}
 	public static Long insertOrder(long member_no,long price,String receive) {
 		OrderVO vo = new OrderVO();

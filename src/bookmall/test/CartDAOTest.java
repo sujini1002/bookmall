@@ -8,7 +8,7 @@ import bookmall.vo.CartVO;
 public class CartDAOTest {
 
 	public static void main(String[] args) {
-		getList(5L);
+		getList(1L);
 	}
 	public static void insert(long book_no,long member_no,long cnt) {
 		CartVO vo = new CartVO();
