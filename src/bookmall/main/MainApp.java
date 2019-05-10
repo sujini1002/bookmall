@@ -54,7 +54,7 @@ public class MainApp {
 		List<CartVO> list = new CartDAO().getList(member_no);
 		for(CartVO vo : list) {
 			//책제목,수량,총가격
-			System.out.print("책제목 : "+vo.getTitle()+"\t");
+			System.out.printf("책제목 : %-15s",vo.getTitle()+"\t");
 			System.out.print("수량 : "+vo.getCnt()+"\t");
 			System.out.print("총가격 : "+vo.getPrice()+"\n");
 		}

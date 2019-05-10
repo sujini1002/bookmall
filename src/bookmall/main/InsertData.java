@@ -34,17 +34,19 @@ public class InsertData {
 		insertCart(1, 1, 1);
 		insertCart(3, 1, 2);
 		insertCart(4, 1, 1);
-//		insertCart(3, 2, 2);
-//		insertCart(5, 2, 3);
+		insertCart(3, 2, 2);
+		insertCart(5, 2, 3);
 
-		insertOrder(1, 62000, "서울시 성북구 길음동");
+		long no =insertOrder(1, 50000, "서울시 종로구 필운동");
 		
 		List<OrderBookVO> list = new ArrayList<OrderBookVO>();
-		list.add(addList(1, 5, 2));
-		list.add(addList(1, 3, 1));
-		list.add(addList(1, 4, 1));
+		list.add(addList(no, 1, 2));
+		list.add(addList(no, 3, 1));
+		list.add(addList(no, 4, 1));
 		
 		insertOrderBook(list);
+		
+		System.out.println("insert 완료!");
 	}
 
 	public static void insertMember(String name, String phone, String email, String password) {
